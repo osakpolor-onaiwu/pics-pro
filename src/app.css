@@ -1,0 +1,59 @@
+body{
+  position: relative;
+  overflow-x: hidden;
+  background-color:grey;
+}
+
+/* navbar styling */
+.navcolor{
+  background-color: grey
+}
+
+/* main body styling */
+.cover{
+  margin-top: -5px
+}
+
+.div1{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url('/living1.jpg');
+  background-size: cover;
+  height: 700px;
+}
+
+ul{
+  display: inline-block;
+}
+
+ul li{
+  display: inline;
+}
+.cat{
+  border: 1px solid white;
+  border-radius: 25px;
+  margin-left: 10px;
+  padding: 2px 10px 2px 10px
+}
+
+.carousel{
+  margin-top: -25px;
+  margin-bottom: -60px
+}
+
+.up{
+  margin-top: -20px
+}
+
+form{
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-top: -25px
+}
+
+input{
+  background-color: white
+}
+
+.italics{
+  font-style: italic;
+  font-size: 20px;
+}
