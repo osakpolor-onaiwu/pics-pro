@@ -42,15 +42,17 @@ class Results extends Component {
     </div>)
     return (
       <div>
-        <div className="row">
-          <form onSubmit={this.handleSubmit}>
-            <div class="input-field">
-              <input id="icon_prefix" name='search' type="text" className="white-text validate"placeholder='Search' onChange={this.handleChange}/>
-              <button type="submit" class="btn waves-effect waves-light">
-                Search
-              </button>
-            </div>
-          </form>
+        <div className="row  background">
+         <div className='container'>
+            <form className="col s12 m12 l12" onSubmit={this.handleSubmit}>
+              <div className="input-field">
+                <input id="icon_prefix" name='search' type="text" className="white-text validate"placeholder='Search' onChange={this.handleChange}/>
+                <button type="submit" className="btn waves-effect waves-light">
+                  Search
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
         <div className="row">
           {results}

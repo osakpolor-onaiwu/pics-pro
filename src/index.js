@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './mycsslibrary.css';
 import './app.css'
+import 'font-awesome/css/font-awesome.min.css';
 import 'materialize-css/dist/css/materialize.min.css'
 import App from './App';
 import {createStore,applyMiddleware} from 'redux'
