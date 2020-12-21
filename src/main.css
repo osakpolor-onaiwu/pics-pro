@@ -1,0 +1,61 @@
+@media only screen and (max-width: 700px) {
+  form div > button {
+    height: 45px;
+    width: 25%;
+    color: white;
+    border: white 1px solid;
+    background-color: darkcyan;
+    margin-top: 5px;
+  }
+}
+
+@media only screen and (min-width: 701px) {
+  form div > button {
+    height: 45px;
+    width: 20%;
+    color: white;
+    border: white 1px solid;
+    background-color: darkcyan;
+  }
+}
+
+nav {
+  width: 100%;
+}
+
+nav div.navigation {
+  padding: 3px 5%;
+}
+
+@media only screen and (max-width: 700px) {
+  form div > input {
+    width: 100%;
+    border: darkblue solid 1px;
+    height: 45px;
+    color: black;
+    padding-left: 10px;
+  }
+  form div > input:hover {
+    -webkit-box-shadow: 0 0 8px #08bbbb;
+            box-shadow: 0 0 8px #08bbbb;
+  }
+}
+
+@media only screen and (min-width: 701px) {
+  form div > input {
+    width: 80%;
+    border: darkblue solid 1px;
+    height: 45px;
+    color: black;
+    padding-left: 10px;
+  }
+  form div > input:hover {
+    -webkit-box-shadow: 0 0 8px #06afa7;
+            box-shadow: 0 0 8px #06afa7;
+  }
+}
+
+h4 {
+  font-size: 25px;
+}
+/*# sourceMappingURL=main.css.map */

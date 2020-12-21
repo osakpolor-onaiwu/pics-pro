@@ -25,6 +25,7 @@ class Page extends React.Component {
     this.props.history.push('/results')
   }
 
+// gets data from api
   componentDidMount() {
   const API_KEY='16724291-bd2828342ad814a2200a30935';
   axios.get("https://pixabay.com/api/?key="+API_KEY+"&q="+encodeURIComponent('all')+'&image_type=photo')
@@ -37,6 +38,7 @@ class Page extends React.Component {
     console.log(this.state.search)
   })
   }
+
   render(){
     const result=this.state.result.length?(this.state.result.map(res=>{
       return(
@@ -60,16 +62,27 @@ class Page extends React.Component {
     return (
       <div className='cover'>
         <div className='div1'>
-          <div className=' row perspective-div '>
-              <div className="col s12 m12 l12 perspective-text">
-                <h3 className='center white-text'>GET AWESOME PICS LIKE NEVER BEFORE</h3>
+          <div className=' row  '>
+              <div className="col s12 m12 l12">
+                <h4 className='center white-text'>
+                  GET AWESOME PICS LIKE NEVER BEFORE
+                  </h4>
               </div>
           </div>
+
            <div className="row container">
             <form className="col s12 m12 l12" onSubmit={this.handleSubmit}>
-                <div className="input-field">
-                  <input id="icon_prefix" name='search' type="text" className="white-text validate"placeholder='Search' onChange={this.handleChange}/>
-                  <button type="submit" className="btn waves-effect waves-light">
+                <div className="input-field browser-default">
+                  <input id="icon_prefix"
+                  name='search'
+                  type="text"
+                  required={true}
+                  className=" browser-default validate"
+                  placeholder='Search'
+                  onChange={this.handleChange}
+                  />
+
+                  <button type="submit">
                     Search
                   </button>
                 </div>

@@ -23,7 +23,7 @@ class Food extends React.Component{
     this.props.history.push('/results')
 
   }
-
+// gets data from api
   componentDidMount() {
     const API_KEY='16724291-bd2828342ad814a2200a30935';
     axios.get("https://pixabay.com/api/?key="+API_KEY+"&q="+encodeURIComponent('Food')+'&image_type=photo')
@@ -56,17 +56,31 @@ class Food extends React.Component{
           <p></p>
         </div>
       )
+
     return(
       <div>
      <div className="row  background">
+            <div className=' row  '>
+              <div className="col s12 m12 l12">
+                <h4 className='center white-text'>TASTE THE BEST DISHES LIFE OFFERS</h4>
+              </div>
+          </div>
          <div className='container'>
             <form className="col s12 m12 l12" onSubmit={this.handleSubmit}>
-              <div className="input-field">
-                <input id="icon_prefix" name='search' type="text" className="white-text validate"placeholder='Search' onChange={this.handleChange}/>
-                <button type="submit" className="btn waves-effect waves-light">
-                  Search
-                </button>
-              </div>
+                <div className="input-field browser-default">
+                  <input 
+                  id="icon_prefix" 
+                  required={true} 
+                  name='search' 
+                  type="text" 
+                  className=" browser-default validate"
+                  placeholder='Search' 
+                  onChange={this.handleChange}
+                  />
+                  <button type="submit">
+                    Search
+                  </button>
+                </div>
             </form>
           </div>
         </div>

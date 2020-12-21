@@ -4,6 +4,7 @@ import './mycsslibrary.css';
 import './app.css'
 import 'font-awesome/css/font-awesome.min.css';
 import 'materialize-css/dist/css/materialize.min.css'
+import './main.css'
 import App from './App';
 import {createStore,applyMiddleware} from 'redux'
 import {Provider} from 'react-redux'
